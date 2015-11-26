@@ -12,7 +12,7 @@ class confesiones(models.Model):
     contenido = models.TextField()
     tag=models.ForeignKey(categoria)
     created_date = models.DateTimeField(
-            default=timezone.now)
+            default=timezone.now())
 
     def __str__(self):
         return self.Nombre_confesion
